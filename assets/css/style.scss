@@ -1,0 +1,60 @@
+---
+---
+
+@charset "UTF-8";
+@import "foundation/components/grid";
+@import "foundation/components/block-grid";
+@import "foundation/components/clearing";
+@import "foundation/components/type";
+@import "foundation/components/visibility";
+
+
+@import "constants";
+@import "css3";
+
+body {
+    color: $color-grey-dark;
+}
+
+a {
+    color: $color-pink;
+}
+a:hover {
+    color: lighten($color-pink, 20%);
+}
+
+section {
+    padding: $paragraph-margin-bottom 0;
+    zoom: 1;
+    @include box-shadow(0 -3px 5px 1px $color-black-translucent);
+    text-shadow: 0 0 2px $color-black-translucent;
+}
+
+.background-pink {
+    background-color: $color-pink;
+    color: $color-white;
+
+    h1 {
+        color: $color-white;
+    }
+
+    a {
+        color: $color-grey-dark;
+        &:hover {
+            color: lighten($color-grey-dark, 10%);
+        }
+    }
+}
+
+.background-grey-light {
+    background-color: $color-grey-very-light;
+}
+
+.background-grey-dark {
+    background-color: $color-grey-dark;
+    color: $color-grey-very-light;
+
+    h2 {
+        color: $color-grey-very-light;
+    }
+}
